@@ -16,8 +16,7 @@ public class ShellShort {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // int array[] = {5,4,3,2,1};
-        int array[] = generateRandomArray(1);
+        int array[] = {5,4,3,2,1};
 
         printArray(array);
 
@@ -74,21 +73,5 @@ public class ShellShort {
             }
             System.out.println(" ]");
         }
-    }
-
-    public static int[] generateRandomArray(int size) {
-        int result[] = null;
-
-        if (0 == size) {
-            result = new int[]{};
-        } else if (size > 0) {
-            result = new int[size];
-            for (int i = 0; i < result.length; ++i) {
-                Random rand = new Random();
-                result[i] = rand.nextInt();
-            }
-        }
-
-        return result;
     }
 }
