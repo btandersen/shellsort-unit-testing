@@ -4,8 +4,6 @@
  */
 package shellshort;
 
-import java.util.Random;
-
 /**
  *
  * @author Brandon
