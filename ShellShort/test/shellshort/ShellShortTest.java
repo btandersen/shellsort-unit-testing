@@ -51,7 +51,8 @@ public class ShellShortTest
         int[] randSortedNeg = toIntArray(test);
         
         // our test cases
-        testCases = new int[][] {
+        testCases = new int[][] 
+        {
             null,                               // NULL array
             { },                                // empty array
             { 23 },                             // array of size one
@@ -65,7 +66,8 @@ public class ShellShortTest
         };
         
         // our expected results
-        expResults = new int[][] {
+        expResults = new int[][] 
+        {
             null,
             { },
             { 23 },
@@ -135,6 +137,7 @@ public class ShellShortTest
 
     /**
      * generateRandomArray - generates a random ArrayList of Integers
+     *
      * @param size - the size of the ArrayList to generate
      * @param maxInt - the maximum range
      * @return - the resulting ArrayList of Integers
@@ -159,9 +162,11 @@ public class ShellShortTest
 
         return result;
     }
-    
-        /**
-     * generateRandomArrayWithNegatives - generates a random ArrayList of Integers, both + and -
+
+    /**
+     * generateRandomArrayWithNegatives - generates a random ArrayList of
+     * Integers, both + and -
+     *
      * @param size - the size of the ArrayList to generate
      * @return - the resulting ArrayList of Integers
      */
@@ -186,6 +191,11 @@ public class ShellShortTest
         return result;
     }
 
+    /**
+     * toIntArray - convert a List of Integers to an int[]
+     * @param list - the List of Integers to convert
+     * @return - the equivalent int[] in the same order as the List
+     */
     public static int[] toIntArray(List<Integer> list)
     {
         int[] result = null;
